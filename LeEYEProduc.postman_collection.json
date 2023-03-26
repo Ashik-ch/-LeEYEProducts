@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "42c8302f-2ff6-4cf7-8256-7cecd15df2f5",
+		"name": "LeEYEProduc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25417507"
+	},
+	"item": [
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Creta\",\r\n    \"description\": \"Hyundai \",\r\n    \"price\": 77000,\r\n    \"image\": [\r\n        \"https://imgd.aeplcdn.com/1056x594/n/eiccs0b_1641693.jpg\",\r\n        \"https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Creta/6775/1584360708758/front-view-118.jpg\",\r\n        \"https://etautolytics.com/files/retail_files/creta-1504179556-prod-var.jpg\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/Mobile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"Mobile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"bike\",\r\n    \"description\": \"Active125\",\r\n    \"price\": 98000,\r\n    \"tax\": 18,\r\n    \"mrp\": 115640,\r\n    \"image\": [\r\n        \"aa.jpg\",\r\n        \"dd.jpg\",\r\n        \"ee.jpg\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/bike",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"bike"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
